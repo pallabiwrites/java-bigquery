@@ -53,7 +53,7 @@ public class CreateModel {
   public static void createModel(String sql) {
     try {
       // Initialize the client that will be used to send requests. This client needs to be created
-      // only once, and it can be reused for multiple requests.
+      // only once, and it can be reused for multiple requests. 
       BigQuery bigquery = BigQueryOptions.getDefaultInstance().getService();
 
       QueryJobConfiguration config = QueryJobConfiguration.newBuilder(sql).build();
